@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>COVID-19 CASOS AMÉRICA</title>  
+    <meta name="author" content="Emanuel Henriquez | HenriquezAppDev">
+    <meta name="description" content="Conteo en tiempo real de los casos afectados por el COVID-19 en Venezuela y el mundo.">
+
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/covid19-venezuela.appspot.com/o/miniatura.jpg?alt=media&token=f3f01836-6a08-45d8-863a-4ada7f1bd2ba" />
+    <meta property="og:image:secure_url" content="https://firebasestorage.googleapis.com/v0/b/covid19-venezuela.appspot.com/o/miniatura.jpg?alt=media&token=f3f01836-6a08-45d8-863a-4ada7f1bd2ba"/>
+    <meta property="og:image:type" content="image/jpeg" />    
+    <meta property="og:image:alt" content="COVID-19 CASOS VENEZUELA" />
+
+    <div id="fb-root"></div>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e7a56571152e800146da4a0&product=inline-share-buttons&cms=website' async='async'></script>
+    
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBAsdVSAsR4T84A39VhCkBO470zV020HDM",
+      authDomain: "covid19-venezuela.firebaseapp.com",
+      databaseURL: "https://covid19-venezuela.firebaseio.com",
+      projectId: "covid19-venezuela",
+      storageBucket: "covid19-venezuela.appspot.com",
+      messagingSenderId: "31080411337",
+      appId: "1:31080411337:web:a101b4abcd71bcec715d18",
+      measurementId: "G-B12Y37R8NR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    
+  </script>
+</html>
